@@ -1,0 +1,75 @@
+
+TEST CASES
+case	Name	Email	Username	Password	Password again	pairings
+1	spravny format	platna emailova adresa	spatny format	heslo splnuje podminky	heslo je shodne	10
+2	spatny format	platna emailova adresa	spravny format neobsazeno	heslo nesplnuje podminky	heslo neni shodne	10
+3	spatny format	neplatna emailova adresa	spatny format	heslo splnuje podminky	heslo neni shodne	8
+4	spravny format	neplatna emailova adresa	spravny format neobsazeno	heslo nesplnuje podminky	heslo je shodne	8
+5	spravny format	nesplnujici format emailu	spravny format obsazeno	heslo splnuje podminky	heslo neni shodne	8
+6	spatny format	nesplnujici format emailu	spravny format obsazeno	heslo nesplnuje podminky	heslo je shodne	7
+7	~spravny format	platna emailova adresa	spatny format	heslo nesplnuje podminky	~heslo neni shodne	1
+8	~spatny format	platna emailova adresa	spravny format neobsazeno	heslo splnuje podminky	~heslo je shodne	1
+9	~spravny format	neplatna emailova adresa	spravny format obsazeno	~heslo splnuje podminky	~heslo je shodne	1
+10	~spatny format	nesplnujici format emailu	spatny format	~heslo nesplnuje podminky	~heslo je shodne	1
+11	~spravny format	nesplnujici format emailu	spravny format neobsazeno	~heslo splnuje podminky	~heslo neni shodne	1
+12	~spatny format	platna emailova adresa	spravny format obsazeno	~heslo nesplnuje podminky	~heslo neni shodne	1
+
+PAIRING DETAILS
+var1	var2	value1	value2	appearances	cases
+Email	Username	platna emailova adresa	spatny format	2	1, 7
+Email	Username	platna emailova adresa	spravny format neobsazeno	2	2, 8
+Email	Username	platna emailova adresa	spravny format obsazeno	1	12
+Email	Username	neplatna emailova adresa	spatny format	1	3
+Email	Username	neplatna emailova adresa	spravny format neobsazeno	1	4
+Email	Username	neplatna emailova adresa	spravny format obsazeno	1	9
+Email	Username	nesplnujici format emailu	spatny format	1	10
+Email	Username	nesplnujici format emailu	spravny format neobsazeno	1	11
+Email	Username	nesplnujici format emailu	spravny format obsazeno	2	5, 6
+Email	Name	platna emailova adresa	spravny format	2	1, 7
+Email	Name	platna emailova adresa	spatny format	3	2, 8, 12
+Email	Name	neplatna emailova adresa	spravny format	2	4, 9
+Email	Name	neplatna emailova adresa	spatny format	1	3
+Email	Name	nesplnujici format emailu	spravny format	2	5, 11
+Email	Name	nesplnujici format emailu	spatny format	2	6, 10
+Email	Password	platna emailova adresa	heslo splnuje podminky	2	1, 8
+Email	Password	platna emailova adresa	heslo nesplnuje podminky	3	2, 7, 12
+Email	Password	neplatna emailova adresa	heslo splnuje podminky	2	3, 9
+Email	Password	neplatna emailova adresa	heslo nesplnuje podminky	1	4
+Email	Password	nesplnujici format emailu	heslo splnuje podminky	2	5, 11
+Email	Password	nesplnujici format emailu	heslo nesplnuje podminky	2	6, 10
+Email	Password again	platna emailova adresa	heslo je shodne	2	1, 8
+Email	Password again	platna emailova adresa	heslo neni shodne	3	2, 7, 12
+Email	Password again	neplatna emailova adresa	heslo je shodne	2	4, 9
+Email	Password again	neplatna emailova adresa	heslo neni shodne	1	3
+Email	Password again	nesplnujici format emailu	heslo je shodne	2	6, 10
+Email	Password again	nesplnujici format emailu	heslo neni shodne	2	5, 11
+Username	Name	spatny format	spravny format	2	1, 7
+Username	Name	spatny format	spatny format	2	3, 10
+Username	Name	spravny format neobsazeno	spravny format	2	4, 11
+Username	Name	spravny format neobsazeno	spatny format	2	2, 8
+Username	Name	spravny format obsazeno	spravny format	2	5, 9
+Username	Name	spravny format obsazeno	spatny format	2	6, 12
+Username	Password	spatny format	heslo splnuje podminky	2	1, 3
+Username	Password	spatny format	heslo nesplnuje podminky	2	7, 10
+Username	Password	spravny format neobsazeno	heslo splnuje podminky	2	8, 11
+Username	Password	spravny format neobsazeno	heslo nesplnuje podminky	2	2, 4
+Username	Password	spravny format obsazeno	heslo splnuje podminky	2	5, 9
+Username	Password	spravny format obsazeno	heslo nesplnuje podminky	2	6, 12
+Username	Password again	spatny format	heslo je shodne	2	1, 10
+Username	Password again	spatny format	heslo neni shodne	2	3, 7
+Username	Password again	spravny format neobsazeno	heslo je shodne	2	4, 8
+Username	Password again	spravny format neobsazeno	heslo neni shodne	2	2, 11
+Username	Password again	spravny format obsazeno	heslo je shodne	2	6, 9
+Username	Password again	spravny format obsazeno	heslo neni shodne	2	5, 12
+Name	Password	spravny format	heslo splnuje podminky	4	1, 5, 9, 11
+Name	Password	spravny format	heslo nesplnuje podminky	2	4, 7
+Name	Password	spatny format	heslo splnuje podminky	2	3, 8
+Name	Password	spatny format	heslo nesplnuje podminky	4	2, 6, 10, 12
+Name	Password again	spravny format	heslo je shodne	3	1, 4, 9
+Name	Password again	spravny format	heslo neni shodne	3	5, 7, 11
+Name	Password again	spatny format	heslo je shodne	3	6, 8, 10
+Name	Password again	spatny format	heslo neni shodne	3	2, 3, 12
+Password	Password again	heslo splnuje podminky	heslo je shodne	3	1, 8, 9
+Password	Password again	heslo splnuje podminky	heslo neni shodne	3	3, 5, 11
+Password	Password again	heslo nesplnuje podminky	heslo je shodne	3	4, 6, 10
+Password	Password again	heslo nesplnuje podminky	heslo neni shodne	3	2, 7, 12

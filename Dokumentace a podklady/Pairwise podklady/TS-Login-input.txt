@@ -1,0 +1,3 @@
+Username	Password
+Username je v DB	Heslo odpovida
+Username neni v DB	Heslo neodpovida

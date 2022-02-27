@@ -1,0 +1,4 @@
+Name	Email	Note
+delka>=3	platny email	prazdny komentar
+delka < 3	neplatny email	neprazdny komentar
+	spatny format	

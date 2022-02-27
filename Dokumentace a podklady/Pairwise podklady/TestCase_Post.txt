@@ -1,0 +1,35 @@
+TEST CASES					
+case	Title	Note	Category	File	pairings
+1	neprazdny nazev	neprazdny popisek	kategorie ze seznamu	spravny format a rozmery	6
+2	neprazdny nazev	prazdny popisek	neplatna kategorie	neplatny format a rozmery	6
+3	prazdny nazev	neprazdny popisek	neplatna kategorie	spravny format a rozmery	5
+4	prazdny nazev	prazdny popisek	kategorie ze seznamu	neplatny format a rozmery	5
+5	~neprazdny nazev	neprazdny popisek	~kategorie ze seznamu	neplatny format a rozmery	1
+6	~neprazdny nazev	prazdny popisek	~neplatna kategorie	spravny format a rozmery	1
+					
+PAIRING DETAILS					
+var1	var2	value1	value2	appearances	cases
+Title	Note	neprazdny nazev	neprazdny popisek	2	1, 5
+Title	Note	neprazdny nazev	prazdny popisek	2	2, 6
+Title	Note	prazdny nazev	neprazdny popisek	1	3
+Title	Note	prazdny nazev	prazdny popisek	1	4
+Title	Category	neprazdny nazev	kategorie ze seznamu	2	1, 5
+Title	Category	neprazdny nazev	neplatna kategorie	2	2, 6
+Title	Category	prazdny nazev	kategorie ze seznamu	1	4
+Title	Category	prazdny nazev	neplatna kategorie	1	3
+Title	File	neprazdny nazev	spravny format a rozmery	2	1, 6
+Title	File	neprazdny nazev	neplatny format a rozmery	2	2, 5
+Title	File	prazdny nazev	spravny format a rozmery	1	3
+Title	File	prazdny nazev	neplatny format a rozmery	1	4
+Note	Category	neprazdny popisek	kategorie ze seznamu	2	1, 5
+Note	Category	neprazdny popisek	neplatna kategorie	1	3
+Note	Category	prazdny popisek	kategorie ze seznamu	1	4
+Note	Category	prazdny popisek	neplatna kategorie	2	2, 6
+Note	File	neprazdny popisek	spravny format a rozmery	2	1, 3
+Note	File	neprazdny popisek	neplatny format a rozmery	1	5
+Note	File	prazdny popisek	spravny format a rozmery	1	6
+Note	File	prazdny popisek	neplatny format a rozmery	2	2, 4
+Category	File	kategorie ze seznamu	spravny format a rozmery	1	1
+Category	File	kategorie ze seznamu	neplatny format a rozmery	2	4, 5
+Category	File	neplatna kategorie	spravny format a rozmery	2	3, 6
+Category	File	neplatna kategorie	neplatny format a rozmery	1	2

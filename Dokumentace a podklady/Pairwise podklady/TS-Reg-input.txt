@@ -1,0 +1,4 @@
+Name	Email	Username	Password	Password again
+spravny format	platna emailova adresa	spatny format	heslo splnuje podminky	heslo je shodne
+spatny format	neplatna emailova adresa	spravny format neobsazeno	heslo nesplnuje podminky	heslo neni shodne
+	nesplnujici format emailu	spravny format obsazeno		

@@ -1,0 +1,3 @@
+Title	Note	Category	File
+neprazdny nazev	neprazdny popisek	kategorie ze seznamu	spravny format a rozmery
+prazdny nazev	prazdny popisek	neplatna kategorie	neplatny format a rozmery
